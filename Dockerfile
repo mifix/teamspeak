@@ -1,7 +1,7 @@
 FROM docker.io/ubuntu:wily
 MAINTAINER wth-kiste
 
-ENV TS_VERSION 3.0.12
+ENV TS_VERSION 3.0.19.1
 
 # create user and add data dir
 RUN useradd -m teamspeak && \
