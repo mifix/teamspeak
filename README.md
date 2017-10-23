@@ -21,4 +21,4 @@ For debugging purposes there is `make run` to enter a teamspeak instance.
 Setup
 -----
 
-Build the `wth-kist/teamspeak` image using `make build`
+Build the `wth-kiste/teamspeak` image using `make build`
