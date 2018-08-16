@@ -1,7 +1,7 @@
-FROM docker.io/ubuntu:wily
+FROM docker.io/ubuntu:trusty
 MAINTAINER wth-kiste
 
-ENV TS_VERSION 3.0.13.8
+ENV TS_VERSION 3.3.0
 
 # create user and add data dir
 RUN useradd -m teamspeak && \
@@ -28,5 +28,6 @@ USER teamspeak
 
 RUN ln -s /home/teamspeak/data/ts3server.sqlitedb /opt/teamspeak/ts3server.sqlitedb
 
+ENV TS3SERVER_LICENSE=accept
 
 CMD LD_LIBRARY_PATH="/opt/teamspeak" /opt/teamspeak/ts3server logpath=/home/teamspeak/data/logs
