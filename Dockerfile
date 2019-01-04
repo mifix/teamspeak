@@ -1,7 +1,7 @@
 FROM docker.io/ubuntu:trusty
 MAINTAINER wth-kiste
 
-ENV TS_VERSION 3.3.0
+ENV TS_VERSION 3.5.1
 
 # create user and add data dir
 RUN useradd -m teamspeak && \
